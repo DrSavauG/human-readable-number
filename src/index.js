@@ -9,7 +9,7 @@ module.exports = function toReadable(number) {
         i = i.substring(1);
         number = Number(i);
     }
-    if (number <= 19) result += d1_19[number];
     if (number >= 20) result += d20_90[i[0]] + ' ' + d1_19[i[1]];
+    if (number <= 19) result += d1_19[number];
     return result.trim();
 };
